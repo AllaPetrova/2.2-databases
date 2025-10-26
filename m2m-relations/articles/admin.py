@@ -27,6 +27,7 @@ class RelationshipInlineFormset(BaseInlineFormSet):
 
 class RelationshipInline(admin.TabularInline):
     model = Relationship
+    extra = 1
 
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
